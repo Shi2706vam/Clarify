@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './navbar.module.css'
+import logo from '../assets/home.svg'
 
 const Navbar = () => {
 
@@ -14,7 +15,7 @@ const Navbar = () => {
         <nav className={styles.navbar}>
             <div className={styles.navContainer}>
                 <aside className={styles.logo} onClick={() => scrollToSection('home')}>
-                    <img src="src/assets/home.svg" alt="" />
+                    <img src={logo} />
                     <h1>CLARIFY</h1>
                 </aside>
                 <ul className={styles.navlinks}>

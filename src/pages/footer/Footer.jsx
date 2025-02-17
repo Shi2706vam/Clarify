@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './footer.module.css'
+import logo from '../../assets/home.svg'
 
 const Footer = () => {
 
@@ -15,7 +16,7 @@ const Footer = () => {
 
                 <span>All rights are reserved by @</span>
                 <div onClick={() => scrollToSection('home')}>
-                    <img src="src/assets/home.svg" alt="" />
+                    <img src={logo} />
                     <h1>CLARIFY</h1>
                 </div>
 

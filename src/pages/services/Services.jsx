@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './services.module.css'
+import service from '../../assets/service.svg'
 
 const Services = () => {
   return (
@@ -9,7 +10,7 @@ const Services = () => {
         </div>
 
         <div className={styles.servicelft }>
-            <img src="src/assets/service.svg" alt="" />
+            <img src={service} alt="Service" />
         </div>
 
         <div className={styles.servicergt}>
