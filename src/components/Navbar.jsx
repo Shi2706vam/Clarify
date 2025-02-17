@@ -14,7 +14,7 @@ const Navbar = () => {
         <nav className={styles.navbar}>
             <div className={styles.navContainer}>
                 <aside className={styles.logo} onClick={() => scrollToSection('home')}>
-                    <img src="src/assets/home.png" alt="" />
+                    <img src="src/assets/home.svg" alt="" />
                     <h1>CLARIFY</h1>
                 </aside>
                 <ul className={styles.navlinks}>

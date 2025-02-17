@@ -10,7 +10,7 @@ const Home = () => {
                 <p className={styles.desc}>We are a student consulting company dedicated to helping job seekers navigate the job market with the right approach. Our focus is on practical strategies that actually work, rather than generic career advice.</p>
             </div>
             <div className={styles.herorgt}>
-                <img src="src/assets/home.png" alt="" />
+                <img src="src/assets/home.svg" alt="" />
             </div>
         </main>
     )

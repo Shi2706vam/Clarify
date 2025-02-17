@@ -15,7 +15,7 @@ const Footer = () => {
 
                 <span>All rights are reserved by @</span>
                 <div onClick={() => scrollToSection('home')}>
-                    <img src="src/assets/home.png" alt="" />
+                    <img src="src/assets/home.svg" alt="" />
                     <h1>CLARIFY</h1>
                 </div>
 

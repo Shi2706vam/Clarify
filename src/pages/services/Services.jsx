@@ -9,7 +9,7 @@ const Services = () => {
         </div>
 
         <div className={styles.servicelft }>
-            <img src="src/assets/service.jpg" alt="" />
+            <img src="src/assets/service.svg" alt="" />
         </div>
 
         <div className={styles.servicergt}>
