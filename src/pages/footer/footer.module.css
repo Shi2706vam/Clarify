@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.footerContainer{
+    height: 60px;
+    width: 100%;
+    background-color: #25252553;
+    box-shadow: 5px 0px 10px #25252553;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(50px);
+    font-family: "Poppins", serif;
+    color: white;
+}
+
+.footerContainer span{
+    height: 100%;
+    font-weight: 20px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.footerContainer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.footerContainer div img{
+    height: 60%;
+}
+
+.footerContainer div h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .footerContainer span{
+        font-size: 15px;
+    }
+
+    .footerContainer div h1{
+        font-size: 15px;
+        font-weight: 500;
+    }
+}

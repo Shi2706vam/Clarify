@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.heroContainer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    /* background: linear-gradient(135deg, #6542a0, #bf55c3); */
+    overflow: hidden;
+    color: white;
+    font-family: "Poppins", serif;
+}
+
+.herolft {
+    width: 50%;
+    padding: 10px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+}
+
+.herolft h1 {
+    font-size: 70px;
+    letter-spacing: 2px;
+    line-height: 80px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.herolft .quote {
+    font-size: 25px;
+    /* font-weight: bolder; */
+    letter-spacing: 1px;
+    font-style: oblique;
+}
+
+.herolft .desc {
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+.herorgt {
+    width: 50%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.herorgt img {
+    /* height: 100%; */
+    width: 100%;
+    /* margin-top: 60px; */
+}
+
+@media (max-width: 1435px) {
+    .herolft h1 {
+        font-size: 60px;
+        letter-spacing: 1.5px;
+        line-height: 75px;
+    }
+
+    .herolft .quote {
+        font-size: 20px;
+    }
+
+    .herolft .desc {
+        font-size: 20px;
+    }
+
+    .herorgt img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .herolft {
+        gap: 30px;
+    }
+
+    .herolft h1 {
+        font-size: 50px;
+    }
+
+    .herolft .quote {
+        font-size: 15px;
+    }
+
+    .herolft .desc {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    .heroContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .herolft {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .herorgt {
+        width: 100%;
+    }
+
+}

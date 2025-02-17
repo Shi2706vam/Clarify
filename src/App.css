@@ -1,0 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  scroll-behavior: smooth;
+  /* position: relative; */
+  background: linear-gradient(135deg, #6542a0, #bf55c3);
+}
