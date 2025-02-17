@@ -16,8 +16,6 @@
     padding: auto;
     display: flex;
     justify-content: center;
-    animation: autoDisplayAnimation both;
-    animation-timeline: view(70% 10%);
 }
 
 .contactlft form {

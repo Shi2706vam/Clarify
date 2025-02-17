@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styles from './contact.module.css'
+import Swal from 'sweetalert2'
 
 const Contact = () => {
 
@@ -32,8 +33,8 @@ const Contact = () => {
 
     if (data.success) {
       Swal.fire({
-        title: "Good job!",
-        text: "You clicked the button!",
+        title: "Amazing!",
+        text: "Message Sent",
         icon: "success",
         showClass: {
           popup: `
@@ -50,6 +51,13 @@ const Contact = () => {
           `
         }
       });
+
+      setData({
+        name: '',
+        email: '',
+        message: ''
+      })
+
     } else {
       Swal.fire({
         icon: "error",
@@ -72,11 +80,7 @@ const Contact = () => {
       });
     }
 
-    setData({
-      name: '',
-      email: '',
-      message: ''
-    })
+
   };
 
   return (
