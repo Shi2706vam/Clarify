@@ -45,7 +45,7 @@ const Navbar = () => {
                         <button onClick={() => {
                             scrollToSection('contact')
                             setmenu(false)
-                        }}>Contact</button>
+                        }}>Contact Us</button>
                     </li>
                 </ul>
 

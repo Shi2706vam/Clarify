@@ -18,8 +18,9 @@ const Footer = () => {
                 <span>All rights are reserved by @</span>
                 <div onClick={() => scrollToSection('home')}>
                     <img src={logo} />
-                    <h1>CLARIFY</h1>
+                    <h1>CLARIFY </h1>
                 </div>
+                <span>© 2025</span>
             </div>
 
             <div className={styles.footerbottom}>
