@@ -41,6 +41,7 @@
 
 .footerContainer .footertop div img{
     height: 60%;
+    animation: heartbeat 3s infinite ease-in-out;
 }
 
 .footerContainer .footertop div h1{
@@ -80,7 +81,27 @@
     color: white;
 }
 
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
 
+    25% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 
 @media (max-width: 620px) {
     .footerContainer{
