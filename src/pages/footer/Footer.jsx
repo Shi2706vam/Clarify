@@ -24,7 +24,7 @@ const Footer = () => {
 
             <div className={styles.footerbottom}>
                 <span>developed by</span>
-                <a href="www.linkedin.com/in/shivam-kumar-7a34a81b9" target="_blank" rel="noopener noreferrer">Shivam Kumar</a>
+                <a href="https://www.linkedin.com/in/shivam-kumar-7a34a81b9" target="_blank" rel="noopener noreferrer">Shivam Kumar</a>
             </div>
 
         </footer>
