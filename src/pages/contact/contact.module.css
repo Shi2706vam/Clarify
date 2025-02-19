@@ -7,21 +7,20 @@
     overflow: hidden;
     background-color: white;
     font-family: "Poppins", serif;
-    transition: all ease-in-out;
 }
 
 .contactlft{
     width: 50%;
     height: 100%;
-    padding: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
 }
 
 .contactlft form {
-    margin-top: 100px;
+    margin-top: 10%;
     width: 80%;
-    height: 80%;
     background: #ffffff56;
     padding: 20px 20px 25px;
     border-radius: 8px;
@@ -83,6 +82,34 @@
     background: #bf55c3;
 }
 
+.contactlft .mailbox{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contactlft .mailbox .mailContent{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contactlft .mailbox  a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #6542a0;
+}
+.contactlft .mailbox  a:hover{
+    color: #bf55c3;
+}
+
 .contactrgt{
     width: 50%;
     background: url(../../assets/contact.svg);
@@ -102,6 +129,15 @@
     }
 }
 
+@media (max-width: 1130px){
+    .contactlft .mailbox{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-items: center;
+        gap: 5px;
+    }
+}
+
 @media (max-width: 900px) {
     .contactrgt{
         display: none;
@@ -113,6 +149,23 @@
         background-position: right;
         background-size: cover;
         width: 100%;
+    }
+
+    .contactlft .mailbox{
+        flex-direction: row;
+        justify-content: center;
+        font-size: 15px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px){
+    .contactlft .mailbox{
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        font-size: 15px;
+        gap: 5px;
     }
 }
 

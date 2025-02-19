@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from './contact.module.css'
 import Swal from 'sweetalert2'
+import { CiMail } from "react-icons/ci";
 
 const Contact = () => {
 
@@ -86,44 +87,49 @@ const Contact = () => {
   return (
     <main className={styles.contactContainer} >
       <div className={styles.contactlft}>
-        <form onSubmit={onSubmit}>
-          <h2>Contact Us</h2>
-          <div className={styles.inputbox}>
-            <label htmlFor="name">Full Name</label>
-            <input
-              type="text"
-              className={styles.field}
-              placeholder='Enter your name'
-              name='name'
-              value={data.name}
-              onChange={handleChange}
-              required
-            />
+          <form onSubmit={onSubmit}>
+            <h2>Contact Us</h2>
+            <div className={styles.inputbox}>
+              <label htmlFor="name">Full Name</label>
+              <input
+                type="text"
+                className={styles.field}
+                placeholder='Enter your name'
+                name='name'
+                value={data.name}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className={styles.inputbox}>
+              <label>Email Address</label>
+              <input
+                type="email"
+                className={styles.field}
+                placeholder='Enter your email'
+                name='email'
+                value={data.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className={styles.inputbox}>
+              <label>Your Message</label>
+              <textarea
+                name='message'
+                placeholder='Enter your message'
+                value={data.message}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <button type='submit'>Send Message</button>
+          </form>
+          <div className={styles.mailbox}>
+            <h2 className={styles.mailContent}>Contact us at</h2>
+            <a href="mailto:connect.clarify@gmail.com"><CiMail/> connect.clarify@gmail.com</a>
           </div>
-          <div className={styles.inputbox}>
-            <label>Email Address</label>
-            <input
-              type="email"
-              className={styles.field}
-              placeholder='Enter your email'
-              name='email'
-              value={data.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className={styles.inputbox}>
-            <label>Your Message</label>
-            <textarea
-              name='message'
-              placeholder='Enter your message'
-              value={data.message}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <button type='submit'>Send Message</button>
-        </form>
+
       </div>
 
       <div className={styles.contactrgt}></div>

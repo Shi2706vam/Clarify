@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './home.module.css'
-import home from '../../assets/home.svg'
+import home from '../../assets/home.png'
 
 const Home = () => {
     return (
