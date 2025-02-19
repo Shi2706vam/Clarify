@@ -70,6 +70,7 @@
 
 .footerContainer .footerbottom a{
     display: flex;
+    font-style: oblique;
     justify-content: center;
     align-items: center;
     font-size: 15px;
