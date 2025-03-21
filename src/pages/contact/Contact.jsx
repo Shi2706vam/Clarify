@@ -23,7 +23,7 @@ const Contact = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "d04ea962-fd3d-457f-a3bb-485fb027943b");
+    formData.append("access_key", "7546fa98-1024-4e53-9c29-f9d8fd89994d");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -127,7 +127,7 @@ const Contact = () => {
           </form>
           <div className={styles.mailbox}>
             <h2 className={styles.mailContent}>Contact us at</h2>
-            <a href="mailto:connect.clarify@gmail.com"><CiMail/> connect.clarify@gmail.com</a>
+            <a href="mailto:infoclarify.ai@gmail.com"><CiMail/> infoclarify.ai@gmail.com</a>
           </div>
 
       </div>
